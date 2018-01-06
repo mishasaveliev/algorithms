@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class MyLinkedListTest {
-    MyLinkedList<Object> linkedList;
+    MyLinkedList<String> linkedList;
 
     @Before
     public void init() {
@@ -17,7 +17,18 @@ public class MyLinkedListTest {
     }
     @Test
     public void hasNextAfterAdd() {
-        linkedList.add(new Object());
+        linkedList.add("o");
         assertEquals(true, linkedList.hasNext());
+    }
+
+    @Test
+    public void getNextTest() {
+        assertEquals(null, linkedList.getNext());
+    }
+
+    @Test
+    public void getNextAfterAdd() {
+        linkedList.add("h");
+        assertEquals("h", linkedList.getNext());
     }
 }

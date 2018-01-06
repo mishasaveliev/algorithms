@@ -1,8 +1,10 @@
 public class MyLinkedList<Item>{
-    Node<Item> node = new Node<>();
-    public Node getNext(){
-        return new Node<Item>();
-
+    Node node = new Node<Item>();
+    public Item getNext(){
+        if(hasNext()==false){
+            return null;
+        }
+        return (Item) node.next.item;
     }
     public void add(Item item){
         node.next = new Node<>();
