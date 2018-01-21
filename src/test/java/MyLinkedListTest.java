@@ -1,4 +1,5 @@
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -45,7 +46,7 @@ public class MyLinkedListTest {
         linkedList.add("c");
         assertEquals("c", linkedList.getNext());
     }
-
+    @Ignore
     @Test
     public void removingItem() {
         linkedList.add("a");
