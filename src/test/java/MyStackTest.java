@@ -8,8 +8,8 @@ public class MyStackTest {
     MyStack<String> myStack1;
 
     @Before
-    public void setUp() throws Exception {
-        myStack1 = new MyStack<>();
+    public void setup() throws Exception {
+        myStack1 = new ArrayStack<>();
     }
 
     @Test
