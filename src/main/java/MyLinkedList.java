@@ -1,5 +1,5 @@
 public class MyLinkedList<Item>{
-    Node getNode = new Node<Item>();
+    Node getNode = new Node<>();
     Node addNode = getNode;
     public Item getNext(){
         if(hasNext()==false){
@@ -8,7 +8,7 @@ public class MyLinkedList<Item>{
         getNode = getNode.next;
         return (Item) getNode.item;
     }
-    public void add(Item item){
+    public void add(Comparable item){
         addNode.next = new Node<>();
         addNode.next.item = item;
         addNode = addNode.next;

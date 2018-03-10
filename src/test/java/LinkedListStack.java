@@ -1,4 +1,4 @@
-public class LinkedListStack<Item> implements MyStack<Item> {
+public class LinkedListStack<Item extends Comparable> implements MyStack<Item> {
     private Node first = null;
     public boolean isEmpty() {
         if(first==null){
@@ -8,7 +8,7 @@ public class LinkedListStack<Item> implements MyStack<Item> {
             return false;
         }
     }
-    public void push(Item item){
+    public void push(Comparable item){
         if(first == null) {
             first = new Node<>();
             first.item=item;
