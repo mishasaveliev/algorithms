@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="95cc43de-bfe7-4940-8423-c9aa9d93e974" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/MyLinkedList.class" afterPath="$PROJECT_DIR$/out/production/classes/MyLinkedList.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Node.class" afterPath="$PROJECT_DIR$/out/production/classes/Node.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/MyLinkedListTest.class" afterPath="$PROJECT_DIR$/out/test/classes/MyLinkedListTest.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SortLinkedList.java" afterPath="$PROJECT_DIR$/src/main/java/SortLinkedList.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SortTest.java" afterPath="$PROJECT_DIR$/src/test/java/SortTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -774,7 +769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520715437529</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="implemented bubbleSort function and added tests for it">
+      <created>1521316182323</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1521316182323</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -883,7 +885,8 @@
     <MESSAGE value="implemented MyStack as interface, implemented a stack using an array" />
     <MESSAGE value="implemented an expression evaluation using Dijkstra's two-stack algorithm" />
     <MESSAGE value="added functions for checking if linked list is sorted, comparable, and tests for both" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functions for checking if linked list is sorted, comparable, and tests for both" />
+    <MESSAGE value="implemented bubbleSort function and added tests for it" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented bubbleSort function and added tests for it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
