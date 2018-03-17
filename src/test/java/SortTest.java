@@ -55,7 +55,7 @@ public class SortTest {
         expectedHead.next.next=new Node<Integer>();
         expectedHead.next.next.item=4;
         Node<Integer> sortedLinkedList = SortLinkedList.sort(unsortedLinkedList);
-        assertEquals(SortLinkedList.isEqualTo(unsortedLinkedList,expectedHead),true);
+        assertEquals(SortLinkedList.isEqualTo(sortedLinkedList,expectedHead),true);
     }
 
     @Test
@@ -78,6 +78,34 @@ public class SortTest {
         sortedLinkedList.next.next=new Node<Integer>();
         sortedLinkedList.next.next.item=4;
         assertEquals(true, SortLinkedList.isSorted(sortedLinkedList));
+    }
+
+    @Test
+    public void sortFiveElements(){
+        Node<Integer> unsortedLinkedList=new Node<>();
+        unsortedLinkedList.item=5;
+        unsortedLinkedList.next=new Node<Integer>();
+        unsortedLinkedList.next.item=4;
+        unsortedLinkedList.next.next=new Node<Integer>();
+        unsortedLinkedList.next.next.item=3;
+        unsortedLinkedList.next.next.next=new Node<Integer>();
+        unsortedLinkedList.next.next.next.item=2;
+        unsortedLinkedList.next.next.next.next=new Node<Integer>();
+        unsortedLinkedList.next.next.next.next.item=3;
+
+        Node<Integer> expectedHead=new Node<>();
+        expectedHead.item=2;
+        expectedHead.next=new Node<Integer>();
+        expectedHead.next.item=3;
+        expectedHead.next.next=new Node<Integer>();
+        expectedHead.next.next.item=3;
+        expectedHead.next.next.next=new Node<Integer>();
+        expectedHead.next.next.next.item=4;
+        expectedHead.next.next.next.next=new Node<Integer>();
+        expectedHead.next.next.next.next.item=5;
+        Node<Integer> sortedLinkedList = SortLinkedList.sort(unsortedLinkedList);
+        assertEquals(SortLinkedList.isEqualTo(sortedLinkedList,expectedHead),true);
+        assertEquals(SortLinkedList.isSorted(sortedLinkedList),true);
     }
 
 }
